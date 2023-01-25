@@ -79,7 +79,7 @@ function createMarkup(data) {
     .map(hit => {
       return `<div class="photo-card">
      <a class="gallery-item" href="${hit.largeImageURL}">
-  <img src="${hit.webformatURL}" alt="${hit.tags}" width = 50 loading="lazy" />
+  <img src="${hit.webformatURL}" alt="${hit.tags}" width = 300 loading="lazy" />
   </a>
   <div class="info">
     <p class="info-item">
