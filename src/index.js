@@ -34,6 +34,7 @@ async function getFetch(inputValue) {
 formEl.addEventListener('submit', handlerOnSubmit);
 
 async function handlerOnSubmit(e) {
+  page = 1;
   if (inputValue === inputEL.value.trim()) {
     return;
   }
@@ -79,7 +80,7 @@ function createMarkup(data) {
     .map(hit => {
       return `<div class="photo-card">
      <a class="gallery-item" href="${hit.largeImageURL}">
-  <img src="${hit.webformatURL}" alt="${hit.tags}" width = 300 loading="lazy" />
+  <img src="${hit.webformatURL}" alt="${hit.tags}" loading="lazy" />
   </a>
   <div class="info">
     <p class="info-item">
